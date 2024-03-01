@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Qual personagem de One Piece você é?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #94a9c4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #bec4f7;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz: Qual personagem de One Piece você é?</h1>
+        <p>Responda às perguntas abaixo para descobrir!</p>
+        <form id="quizForm">
+            <h2>Pergunta 1: Qual é o seu sonho?</h2>
+            <input type="radio" name="pergunta1" value="reiDosPiratas" aria-label="Se tornar o Rei dos Piratas">
+            <p>Se tornar o Rei dos Piratas</p>
+            <input type="radio" name="pergunta1" value="maiorEspadachim" aria-label="Se tornar o maior espadachim do mundo">
+            <p>Se tornar o maior espadachim do mundo</p>
+            <input type="radio" name="pergunta1" value="mapaCompleto" aria-label="Desenhar o mapa completo do mundo">
+            <p>Desenhar o mapa completo do mundo</p>
+            <input type="radio" name="pergunta1" value="bravoGuerreiro" aria-label="Se tornar um bravo guerreiro dos mares">
+            <p>Se tornar um bravo guerreiro dos mares</p>
+            <input type="radio" name="pergunta1" value="allBlue" aria-label="Encontrar o All Blue">
+            <p>Encontrar o All Blue</p>
+            
+            <h2>Pergunta 2: Qual é o seu tipo de luta?</h2>
+            <input type="radio" name="pergunta2" value="hakiConquistador" aria-label="Haki do Conquistador">
+            <p>Haki do Conquistador</p>
+            <input type="radio" name="pergunta2" value="santoryu" aria-label="Santoryu (três espadas)">
+            <p>Santoryu (três espadas)</p>
+            <input type="radio" name="pergunta2" value="climaTact" aria-label="Clima Tact (clima tempo)">
+            <p>Clima Tact (clima tempo)</p>
+            <input type="radio" name="pergunta2" value="atiradorElite" aria-label="Atirador de elite">
+            <p>Atirador de elite</p>
+            <input type="radio" name="pergunta2" value="blackLegStyle" aria-label="Black Leg Style (Estilo da perna negra)">
+            <p>Black Leg Style (Estilo da perna negra)</p>
+            
+            <h2>Pergunta 3: Qual é o seu lugar favorito para relaxar?</h2>
+            <input type="radio" name="pergunta3" value="marAberto" aria-label="Mar aberto">
+            <p>Mar aberto</p>
+            <input type="radio" name="pergunta3" value="barco" aria-label="Barco">
+            <p>Barco</p>
+            <input type="radio" name="pergunta3" value="ilhaTropical" aria-label="Ilha tropical">
+            <p>Ilha tropical</p>
+            <input type="radio" name="pergunta3" value="cumeMontanha" aria-label="Cume de uma montanha">
+            <p>Cume de uma montanha</p>
+            <input type="radio" name="pergunta3" value="cozinha" aria-label="Cozinha">
+            <p>Cozinha</p>
+            
+            <h2>Pergunta 4: Qual é o seu maior medo?</h2>
+            <input type="radio" name="pergunta4" value="naoProtegerAmigos" aria-label="Não conseguir proteger meus amigos">
+            <p>Não conseguir proteger meus amigos</p>
+            <input type="radio" name="pergunta4" value="perderCaminho" aria-label="Perder meu caminho">
+            <p>Perder meu caminho</p>
+            <input type="radio" name="pergunta4" value="tempestades" aria-label="Tempestades">
+            <p>Tempestades</p>
+            <input type="radio" name="pergunta4" value="fantasmas" aria-label="Fantasmas">
+            <p>Fantasmas</p>
+            <input type="radio" name="pergunta4" value="naoCozinhar" aria-label="Não conseguir cozinhar">
+            <p>Não conseguir cozinhar</p>
+            
+            <h2>Pergunta 5: Qual é o seu tipo de Haki favorito?</h2>
+            <input type="radio" name="pergunta5" value="hakiConquistador" aria-label="Haki do Conquistador">
+            <p>Haki do Conquistador</p>
+            <input type="radio" name="pergunta5" value="hakiArmadura" aria-label="Haki da Armadura">
+            <p>Haki da Armadura</p>
+            <input type="radio" name="pergunta5" value="hakiObservacao" aria-label="Haki da Observação">
+            <p>Haki da Observação</p>
+            <input type="radio" name="pergunta5" value="nenhumHaki" aria-label="Não tenho interesse em Haki">
+            <p>Não tenho interesse em Haki</p>
+            
+            <h2>Pergunta 6: Qual é o seu hobby favorito?</h2>
+            <input type="radio" name="pergunta6" value="comer" aria-label="Comer">
+            <p>Comer</p>
+            <input type="radio" name="pergunta6" value="dormir" aria-label="Dormir">
+            <p>Dormir</p>
+            <input type="radio" name="pergunta6" value="navegar" aria-label="Navegar">
+            <p>Navegar</p>
+            <input type="radio" name="pergunta6" value="contarHistorias" aria-label="Contar histórias">
+            <p>Contar histórias</p>
+            <input type="radio" name="pergunta6" value="cozinhar" aria-label="Cozinhar">
+            <p>Cozinhar</p>
+            <input type="radio" name="pergunta6" value="medicina" aria-label="Medicina">
+            <p>Medicina</p>
+            <input type="radio" name="pergunta6" value="ler" aria-label="Ler">
+            <p>Ler</p>
+            <input type="radio" name="pergunta6" value="construirColetar" aria-label="Construir/coletar coisas">
+            <p>Construir/coletar coisas</p>
+            
+            <!-- Adicione mais perguntas aqui -->
+
+            <button type="button" onclick="submitQuiz()">Descobrir</button>
+        </form>
+        
+        <div id="result"></div>
+    </div>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script>
+        function submitQuiz() {
+            var form = document.getElementById("quizForm");
+            var resultDiv = document.getElementById("result");
+
+            var respostas = {
+                pergunta1: form.elements["pergunta1"].value,
+                pergunta2: form.elements["pergunta2"].value,
+                pergunta3: form.elements["pergunta3"].value,
+                pergunta4: form.elements["pergunta4"].value,
+                pergunta5: form.elements["pergunta5"].value,
+                pergunta6: form.elements["pergunta6"].value
+            };
+
+            var correspondencia = {
+                reiDosPiratas: "Monkey D. Luffy",
+                maiorEspadachim: "Roronoa Zoro",
+                mapaCompleto: "Nami",
+                bravoGuerreiro: "Usopp",
+                allBlue: "Sanji",
+                hakiConquistador: "Monkey D. Luffy",
+                santoryu: "Roronoa Zoro",
+                climaTact: "Nami",
+                atiradorElite: "Usopp",
+                blackLegStyle: "Sanji",
+                marAberto: "Monkey D. Luffy",
+                barco: "Roronoa Zoro",
+                ilhaTropical: "Nami",
+                cumeMontanha: "Usopp",
+                cozinha: "Sanji",
+                naoProtegerAmigos: "Monkey D. Luffy",
+                perderCaminho: "Roronoa Zoro",
+                tempestades: "Nami",
+                fantasmas: "Usopp",
+                naoCozinhar: "Sanji",
+                hakiConquistador: "Monkey D. Luffy",
+                hakiArmadura: "Roronoa Zoro",
+                hakiObservacao: "Nami",
+                nenhumHaki: "Usopp",
+                comer: "Sanji",
+                dormir: "Roronoa Zoro",
+                navegar: "Monkey D. Luffy",
+                contarHistorias: "Usopp",
+                cozinhar: "Sanji",
+                medicina: "Tony Tony Chopper",
+                ler: "Nico Robin",
+                construirColetar: "Franky"
+            };
+
+            var contagem = {};
+
+            for (var pergunta in respostas) {
+                var resposta = respostas[pergunta];
+                var personagem = correspondencia[resposta];
+                if (personagem) {
+                    if (contagem[personagem]) {
+                        contagem[personagem]++;
+                    } else {
+                        contagem[personagem] = 1;
+                    }
+                }
+            }
+
+            var personagemMaisEscolhido = "";
+            var maxContagem = 0;
+
+            for (var personagem in contagem) {
+                if (contagem[personagem] > maxContagem) {
+                    maxContagem = contagem[personagem];
+                    personagemMaisEscolhido = personagem;
+                }
+            }
+
+            var porcentagem = (maxContagem / Object.keys(respostas).length) * 100;
+
+            resultDiv.innerHTML = "Você é: " + personagemMaisEscolhido + " (" + porcentagem.toFixed(2) + "%)";
+        }
+    </script>
+    
+    <script>
+        function desativarVLibras() {
+            document.querySelector('.enabled').remove();
+        }
+    </script>
+    
+    <button type="button" onclick="desativarVLibras()">Desative o VLibras para ver o resultado</button>
+</body>
+</html>
